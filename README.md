@@ -2,8 +2,6 @@
 
 This script requests a JWT access token from Azure Active Directory using the OAuth2 `client_credentials` flow, securely retrieving the client credentials from **HashiCorp Vault**, and uses the token to authenticate against the OpenShift API.
 
----
-
 ## Dependencies
 
 Install the following CLI tools:
@@ -43,7 +41,7 @@ chmod +x get_oidc_token_from_vault_and_call_openshift.sh
 ```
 ./get_oidc_token_from_vault_and_call_openshift.sh
 ```
-✅ Expected Output
+## Expected Output
 ```
 /apis/user.openshift.io/v1/users/~
 ```
@@ -58,14 +56,3 @@ And return output like:
   ...
 }
 ```
-📎 Related References
-Azure AD OAuth2 Client Credentials Flow
-
-HashiCorp Vault KV Secrets Engine
-
-OpenShift OAuth OIDC Integration
-
-vbnet
-Copy
-Edit
-
